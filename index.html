@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Curriculum Vitae - Nicolas Frega</title>
+</head>
+<body>
+    <!--Inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>|NF|</h1>
+                        <nav id="nav" class="">
+                            <ul id="links">
+                                <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                                <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                                <li><a href="#formacionacademica" onclick="seleccionar(this)">FORMACION ACADEMICA</a></li>
+                                <li><a href="#experiencia" onclick="seleccionar(this)">EXPERIENCIA</a></li>
+                                <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                            </ul>
+                        </nav>
+
+                        <!-- Iconos del menu responsive-->
+                        <div id="icono-nav" onclick="responsiveMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                </div>
+            </header>
+            <div class="presentacion">                
+                <p class="bienvenida">Hola!</p>
+                <h2>Soy <span>Nico Frega</span>, futuro Front-End Developer.</h2>                
+            </div>
+        </div>
+    </section>
+
+    <!--Sobre Mi-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="imagenes/foto.jpg" alt="foto perfil">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Nicolás Frega</span></h2>
+            <h3>Desarrollador Web en proceso</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Doloremque tempore nostrum eum, aliquid doloribus a magnam
+               deleniti unde molestias praesentium sint quas ab facere ut
+               saepe dolores quae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="cv/Nicolas Frega CV.pdf" target="_blank">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--Formacion Academica-->
+    <section id="formacionacademica">
+        <h3 class="titulo-seccion">FORMACION ACADEMICA</h3>
+        <div class="fila">
+            <div class="formacion">
+                <span class="icono"> <i class="fa-solid fa-computer"></i></span>
+                <h4>Técnico Superior en Diseño Multimedial</h4>
+                <hr>
+                <ul class="formacion-tag">
+                    <li>2020</li>
+                    <li>-</li>
+                    <li>Actualidad</li>
+                </ul>
+                <p>Instituto Sudamericano para la Enseñanza de la Comunicación</p>
+            </div>
+            <div class="formacion">
+                <span class="icono"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                <h4>Curso de Medición de Motores</h4>
+                <hr>
+                <ul class="formacion-tag">
+                    <li>2019</li>
+                    <li>-</li>
+                    <li>2019</li>
+                </ul>
+                <p>Centro de formación PSA Peugeot Citroën</p>
+            </div>
+            <div class="formacion">
+                <span class="icono"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                <h4>Curso de Unión al Suelo</h4>
+                <hr>
+                <ul class="formacion-tag">
+                    <li>2018</li>
+                    <li>-</li>
+                    <li>2018</li>
+                </ul>
+                <p>Centro de formación PSA Peugeot Citroën</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="formacion">
+                <span class="icono"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                <h4>New model technical training - NL-3/GS</h4>
+                <hr>
+                <ul class="formacion-tag">
+                    <li>2017</li>
+                    <li>-</li>
+                    <li>2017</li>
+                </ul>
+                <p>GEELY</p>
+            </div>
+            <div class="formacion">
+                <span class="icono"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                <h4>Mecánica Integral de Automotores y Sistemas de Alimentación</h4>
+                <hr>
+                <ul class="formacion-tag">
+                    <li>2014</li>
+                    <li>-</li>
+                    <li>2016</li>
+                </ul>
+                <p>Escuela Argentina de Automotores</p>
+            </div>
+            <div class="formacion">
+                <span class="icono"><i class="fa-solid fa-microchip"></i></span>
+                <h4>Técnico Electrónico</h4>
+                <hr>
+                <ul class="formacion-tag">
+                    <li>2007</li>
+                    <li>-</li>
+                    <li>2012</li>
+                </ul>
+                <p>Instituto San José A-355</p>
+            </div>
+        </div>
+    </section>
+  
+    <!--Habilidades-->
+    <div class="contenedor-habilidades" id="habilidades">
+        <h3>HABILIDADES</h3>
+        <div class="habilidad">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                    <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+
+        <div class="habilidad">
+            <div class="info">
+                <p><span class="lista"></span>JavaScript</p>
+                    <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="habilidad">
+            <div class="info">
+                <p><span class="lista"></span>Photoshop</p>
+                    <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+        <div class="habilidad">
+            <div class="info">
+                <p><span class="lista"></span>Illustrator</p>
+                    <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="illus" class="barra-progreso4"></div>
+            </div>
+        </div>
+
+        <div class="habilidad">
+            <div class="info">
+                <p><span class="lista"></span>Premiere</p>
+                    <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="pr" class="barra-progreso5"></div>
+            </div>
+        </div>
+
+        <div class="habilidad">
+            <div class="info">
+                <p><span class="lista"></span>After Effects</p>
+                    <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="af" class="barra-progreso6"></div>
+            </div>
+        </div>
+
+        <div class="habilidad">
+            <div class="info">
+                <p><span class="lista"></span>Figma</p>
+                    <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="fig" class="barra-progreso7"></div>
+            </div>
+        </div>        
+    </div>
+
+    <!--Experiencia-->
+    <section id="experiencia">
+        <h3 class="titulo-seccion">EXPERIENCIA LABORAL</h3>
+        <div class="fila">
+            <div class="trabajo">
+                <div class="overlay"></div>
+                <img src="imagenes/trabajo1.jpg" alt="trabajo en lazar">
+                <div class="info">
+                    <h4>Técnico en Mantenimiento y Maquinista</h4>
+                    <p>2022 - 2022</p>
+                    <p>Laboratorio LAZAR</p>
+                </div>
+            </div>
+            <div class="trabajo">
+                <div class="overlay"></div>
+                <img src="imagenes/trabajo2.jpg" alt="taller darc">
+                <div class="info">
+                    <h4>Técnico Mecánico</h4>
+                    <p>2017 - 2022</p>
+                    <p>Postventa Citroën - Grupo DARC SA</p>
+                </div>
+            </div>
+            <div class="trabajo">
+                <div class="overlay"></div>
+                <img src="imagenes/trabajo3.jpg" alt="taller select">
+                <div class="info">
+                    <h4>Técnico Mecánico</h4>
+                    <p>2016 - 2017</p>
+                    <p>Postventa Citroën - Select Automotores SA</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="trabajo">
+                <div class="overlay"></div>
+                <img src="imagenes/trabajo4.jpg" alt="tecnico electronico">
+                <div class="info">
+                    <h4>Técnico Electrónico</h4>
+                    <p>2014 - 2015</p>
+                    <p>J&S Electronics</p>
+                </div>
+            </div>
+            <div class="trabajo">
+                <div class="overlay"></div>
+                <img src="imagenes/trabajo5.jpg" alt="trabajo en lulemuu">
+                <div class="info">
+                    <h4>Operario de producción y Técnico en mantenimiento</h4>
+                    <p>2013 - 2014</p>
+                    <p>Lulemuu</p>
+                </div>
+            </div>
+    </section>
+    <!--Contacto-->
+    <section id="contacto">
+        <h2 class="titulo-seccion">CONTACTO</h2>
+        <p>Contactame si te gusto mi perfil.</p>
+        <div class="contenedor-contacto">        
+          <div class="contacto-mail">
+            <a href="mailto:nicofrega@gmail.com" target="_blank" rel="noopener noreferrer">
+              <div class="contacto-icono">  
+                <i class="far fa-envelope"></i>
+                <p>Gmail</p>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/nico.frega" target="_blank" rel="noopener noreferrer">
+              <div class="contacto-icono">
+                <i class="fa-brands fa-instagram"></i>
+                <p>Instagram</p>
+              </div>
+            </a>           
+            <a href="https://www.facebook.com/nico.frega" target="_blank" rel="noopener noreferrer">
+              <div class="contacto-icono">
+                <i class="fa-brands fa-facebook"></i>
+                <p>Facebook</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/nicofrega/" target="_blank" rel="noopener noreferrer">
+              <div class="contacto-icono">
+                <i class="fab fa-linkedin-in"></i>
+                <p>Linkedin</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    <!--Footer-->
+    <footer>
+        <p>Copyright © 2023 - <a href="#">@nicofrega</a> <br/>
+            Todos los derechos reservados
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
